@@ -1,0 +1,28 @@
+import = [
+    "~/.config/alacritty/themes/themes/everforest_dark.toml"
+    #Theme from https://github.com/alacritty/alacritty-theme
+]
+
+live_config_reload = true
+
+[window]
+opacity = 0.9
+
+[font]
+size = 16
+
+[font.bold]
+family = "Iosevka"
+style = "Bold"
+
+[font.bold_italic]
+family = "Iosevka"
+style = "Bold Italic"
+
+[font.italic]
+family = "Iosevka"
+style = "Italic"
+
+[font.normal]
+family = "Iosevka"
+style = "Regular"
