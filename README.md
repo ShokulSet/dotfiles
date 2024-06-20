@@ -5,7 +5,9 @@ download chezmoi then run:
 # BASIC USAGE
 sync dotfiles between system
 > chezmoi update
+
 pull from git to system
 > chezmoi apply
+
 go to chezmoi directory
 > chezmoi cd
