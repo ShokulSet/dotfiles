@@ -5,8 +5,30 @@ download chezmoi then run:
 ## Forget how to use?
 https://www.chezmoi.io/quick-start
 
-## Basic Utility
+## Bind
+### Utility Bind
+Screenshot to clipboard
+> Mod+Tab
 
+### Fn Bind
+Mute audio
+> Fn+F1
+
+Lower volume
+> Fn+F2
+
+Raise volume
+> Fn+F3
+
+Lock screen
+> Fn+F4
+
+Lower brightness
+> Fn+F5
+
+Raise brightness
+> Fn+F6
+## Basic Utility
 ### Login Manager
 - Ly
 
@@ -15,6 +37,7 @@ https://www.chezmoi.io/quick-start
 
 ### Image view
 - imv
+
 
 ### Layout
 - autotiling
