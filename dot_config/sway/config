@@ -48,7 +48,7 @@ input <identifier> xkb_model "pc101"
 
 input type:touchpad {
     tap enabled
-    #natural_scroll enabled
+    #natural_scroll enabled 
 }
 
 # You can get the names of your inputs by running: swaymsg -t get_inputs
