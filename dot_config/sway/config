@@ -1,4 +1,6 @@
 # Copy this to ~/.config/sway/config and edit it to your liking.
+### Autostarted
+exec /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 ### Variables
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
@@ -11,6 +13,7 @@ set $right l
 set $term alacritty 
 set $menu dmenu_path | wmenu | xargs swaymsg exec fuzzel 
 set $screen slurp | grim -g - - | wl-copy
+
 set $editor vim
 ### Output configuration
 output eDP-1 resolution 1920x1080 position 1920 0 scale 1.25
@@ -49,6 +52,10 @@ input <identifier> xkb_model "pc101"
 input type:touchpad {
     tap enabled
     #natural_scroll enabled 
+    dwt enabled
+    accel_profile "flat"
+    pointer_accel 0.6
+    scroll_factor 0.4
 }
 
 # You can get the names of your inputs by running: swaymsg -t get_inputs
@@ -213,7 +220,7 @@ bar {
     colors {
         statusline #ffffff
         background #323232
-	focused_workspace #373A40FF #51829B #EEEEEE
+	    focused_workspace #373A40FF #51829B #EEEEEE
         inactive_workspace #32323200 #323232 #5c5c5c
     }
 }
