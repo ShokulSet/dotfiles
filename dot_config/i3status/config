@@ -15,6 +15,8 @@ general {
 #order += "wireless _first_"
 #order += "ethernet _first_"
 order += "battery all"
+#order += "battery 0"
+#order += "battery 1"
 #order += "disk /"
 #order += "load"
 #order += "memory"
@@ -30,6 +32,7 @@ ethernet _first_ {
         format_down = ""
 }
 
+
 battery all {
         format = "%status %percentage %remaining"
         format_down = "No battery"
@@ -38,10 +41,40 @@ battery all {
         status_unk = "?UNK"
         status_full = "☻ FULL"
         path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 10 
+        threshold_type = "percentage"
+        #last_full_capacity=true
+}
+
+
+battery 0 {
+        format = "%status %percentage %remaining"
+        format_down = "No battery"
+        status_chr = "⚡CHR"
+        status_bat = "🞲 BAT"
+        status_unk = "?UNK"
+        status_full = "☻ FULL"
+        path = "/sys/class/power_supply/BAT0/uevent"
         low_threshold = 30 
         threshold_type = "percentage"
         #last_full_capacity=true
 }
+
+
+battery 1 {
+        format = "%status %percentage %remaining"
+        format_down = "No battery"
+        status_chr = "⚡CHR"
+        status_bat = "🞲 BAT"
+        status_unk = "?UNK"
+        status_full = "☻ FULL"
+        path = "/sys/class/power_supply/BAT1/uevent"
+        low_threshold = 30 
+        threshold_type = "percentage"
+        #last_full_capacity=true
+}
+
+
 
 disk "/" {
         format = "%avail"

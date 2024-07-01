@@ -9,7 +9,7 @@ live_config_reload = true
 opacity = 0.9
 
 [font]
-size = 16
+size = 18
 
 [font.bold]
 family = "Iosevka"
