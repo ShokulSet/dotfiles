@@ -231,7 +231,7 @@ bar {
 # Border
 #
 
-    default_border none 
+    default_border pixel 2 
     smart_borders on
     gaps inner 10
 
@@ -239,6 +239,9 @@ bar {
 # swayfx
 #
 
+    corner_radius 10
+    set $border_focused #f0f8ffdd
+    set $border_unfocused #323232dd
 
 #
 # Layout
