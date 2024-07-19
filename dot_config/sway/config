@@ -222,7 +222,7 @@ bar {
 
 #Border
 
-    default_border pixel 2
+    default_border pixel 2 
     default_floating_border pixel 3
     gaps inner  5
     gaps outer  0
